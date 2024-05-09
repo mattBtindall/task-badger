@@ -1,0 +1,21 @@
+.sidebar {
+    display: flex;
+
+    &--column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__left {
+
+    }
+
+    &__right {
+
+    }
+
+    &__logo {
+        width: 48px;
+        height: 48px;
+    }
+}
