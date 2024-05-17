@@ -1,0 +1,21 @@
+@import '../variables';
+
+.icon {
+    cursor: pointer;
+
+    > svg {
+        width: 22px;
+        height: auto;
+    }
+
+    &--sidebar {
+        display: flex;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+    }
+
+    &.active {
+        color: $white-ish;
+        border-left: 2px solid $primary-colour;
+    }
+}

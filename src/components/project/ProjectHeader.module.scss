@@ -1,0 +1,35 @@
+@import '../../variables';
+
+.project-header {
+    display: flex;
+    align-items: center;
+    padding: 0 .25rem 0 .5rem;
+    margin: 1rem 0;
+    gap: 1rem;
+    text-decoration: none;
+
+    &__image {
+        border-radius: 50%;
+        width: 32px;
+        flex: 0 0 auto;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $gray;
+
+        &--icon {
+            color: $white;
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__text {
+        display: block;
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 250px;
+    }
+}

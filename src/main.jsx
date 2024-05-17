@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Root from './routes/Root.jsx'
 import Dashboard from './routes/Dashboard.jsx'
+import Project from './components/project/Project.jsx'
 import {
     createBrowserRouter,
     RouterProvider,
@@ -15,7 +16,11 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard',
                 element: <Dashboard />
-            }
+            },
+            {
+                path: "project/:projectId",
+                element: <Project />,
+            },
         ]
     }
 ])
